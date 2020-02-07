@@ -1,6 +1,7 @@
 package com.surrus.peopleinspace
 
 import android.app.Application
+import com.surrus.common.repository.PeopleInSpaceRepository
 import com.surrus.common.repository.appContext
 import com.surrus.peopleinspace.di.appModule
 import org.koin.android.ext.koin.androidContext

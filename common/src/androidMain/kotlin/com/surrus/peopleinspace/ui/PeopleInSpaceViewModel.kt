@@ -13,10 +13,23 @@ class PeopleInSpaceViewModel(peopleInSpaceRepository: PeopleInSpaceRepository) :
 
     init {
         viewModelScope.launch {
-            peopleInSpaceRepository.fetchPeopleAsFlow().collect {
-                peopleInSpace.value = it
+//            peopleInSpaceRepository.fetchPeopleAsFlow().collect {
+//                peopleInSpace.value = it
+//            }
+
+            //peopleInSpace.postValue(peopleInSpaceRepository.fetchPeople())
+
+            peopleInSpaceRepository.fetchPeople {
+                peopleInSpace.postValue(it)
             }
+
         }
 
     }
+
+
+    suspend fun someFun(success: (String) -> Unit) {
+        success("hi")
+    }
+
 }

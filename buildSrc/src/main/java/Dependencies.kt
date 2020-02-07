@@ -1,12 +1,12 @@
 
 object Versions {
-    const val androidBuildToolsVersion = "4.0.0-alpha09"
+    const val androidBuildToolsVersion = "4.1.0-alpha03"
 
-    const val kotlin = "1.3.61"
-    const val kotlinCoroutines = "1.3.3"
-    const val koin = "2.0.0"
-    const val ktor = "1.3.0-rc"
-    const val kotlinxSerialization = "0.14.0"
+    const val kotlin = "1.3.70"
+    const val kotlinCoroutines = "1.3.5"
+    const val koin = "2.1.2"
+    const val ktor = "1.3.2"
+    const val kotlinxSerialization = "0.20.0"
     const val sqlDelight = "1.2.2"
     const val retrofit = "2.4.0"
     const val okHttp = "3.12.0"
@@ -16,6 +16,7 @@ object Versions {
     const val room = "2.1.0-beta01"
     const val lifecycle = "2.2.0-alpha01"
     const val fragment = "1.1.0-alpha09"
+    const val compose = "0.1.0-dev07"
 
     const val junit = "4.12"
     const val coreTesting = "2.0.0"
